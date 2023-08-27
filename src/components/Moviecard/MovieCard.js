@@ -20,7 +20,7 @@ const MovieCard = ({ movies }) => {
                             <h2>{movie.title}</h2>
                             <p><FontAwesomeIcon icon={faStar} />{Number(movie.vote_average).toFixed(1)}</p>
                             <h3>{movie.release_date}</h3>
-                            <p>{movie.overview.slice(0, 400)}{movie.overview.length > 400 ? "..." : ""}</p>
+                            <p>{movie.overview.slice(0, 250)}{movie.overview.length > 250 ? "..." : ""}</p>
                         </div>
                     </li>
                     ))}
